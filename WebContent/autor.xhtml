@@ -14,7 +14,7 @@
 					<h:outputLabel value="Nome:" for="nome" />
 					<h:inputText id="nome" value="#{autorBean.autor.nome}" 
 							required="true" requiredMessage="Nome do autor obrigatório"
-							validatorMessage="Título não pode ser menor que 1 caractere">
+							validatorMessage="Título não pode ser menor que 5 caractere">
 							<f:validateLength minimum="5"/>
 					</h:inputText>
 					<h:commandButton value="Gravar" action="#{autorBean.gravar}" />
